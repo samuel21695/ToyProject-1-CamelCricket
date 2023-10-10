@@ -43,10 +43,13 @@
       gameBoard.style.height = 1000 + "px"
       gameBoard.style.background = "darkseagreen";
       // create div in the gameBoard as time increase
+      count = 0;
       setInterval(function() {
-        let createGop = document.createElement('div') 
+        let createGop = document.createElement('div'); 
         gameBoard.appendChild(createGop);
-
+        gameBoard.children[count].style.top = Math.floor(Math.random() * 491) + "px";
+        gameBoard.children[count].style.left = Math.floor(Math.random() * 491) + "px";
+        count++
       }, 1000)
     })
 
