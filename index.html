@@ -27,11 +27,16 @@
     const startBtn = document.getElementById('start');
     const gameBoard = document.querySelector('.board');
     console.dir(gameBoard)
+
+    // click start button
     startBtn.addEventListener('click', function(event) {
+      // remove start button when click
       event.target.remove();
+      // set gameboard style
       gameBoard.style.width = 1000 + "px"
       gameBoard.style.height = 1000 + "px"
       gameBoard.style.background = "darkseagreen";
+
     })
 
   </script>
