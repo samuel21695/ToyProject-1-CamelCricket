@@ -25,10 +25,13 @@
   </div>
   <script>
     const startBtn = document.getElementById('start');
-    const gameBoard = document.querySelector('board');
-  
+    const gameBoard = document.querySelector('.board');
+    console.dir(gameBoard)
     startBtn.addEventListener('click', function(event) {
       event.target.remove();
+      gameBoard.style.width = 1000 + "px"
+      gameBoard.style.height = 1000 + "px"
+      gameBoard.style.background = "darkseagreen";
     })
 
   </script>
