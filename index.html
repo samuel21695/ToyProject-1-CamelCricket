@@ -4,11 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    #root {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #start {
+      width: 100px;
+      height: 50px;
+    }
+  </style>
 </head>
 <body>
   <div id="root">
+    <button id="start">start</button>
+    <div class ="board"></div>
   </div>
   <script>
+    const startBtn = document.getElementById('start');
+    const gameBoard = document.querySelector('board');
+  
+    startBtn.addEventListener('click', function(event) {
+      event.target.remove();
+    })
+
   </script>
 </body>
 </html>
