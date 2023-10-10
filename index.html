@@ -16,6 +16,12 @@
       width: 100px;
       height: 50px;
     }
+    #root > div > div {
+      width: 50px;
+      height: 50px;
+      background-image: url(./곱등이.png);
+      background-size: 50px;
+    }
   </style>
 </head>
 <body>
@@ -36,7 +42,11 @@
       gameBoard.style.width = 1000 + "px"
       gameBoard.style.height = 1000 + "px"
       gameBoard.style.background = "darkseagreen";
-
+      // create div in the gameBoard as time increase
+      let createGop = document.createElement('div') 
+      setInterval(function() {
+        gameBoard.appendChild(createGop);
+      }, 1000)
     })
 
   </script>
